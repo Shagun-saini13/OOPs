@@ -11,14 +11,14 @@ class student{
     public:
     void setname(string n){
         if(n==" "){
-            cout<<"invalid nam: "<<endl;
+            cout<<"invalid name: "<<endl;
             return ;
         }
         name = n;
     }
     void setage(int a){
         if(a<=0 || a>100){
-            cout<<"invalid age: "<<endl;
+            cout<<"invalid age: ";
         }
         age = a;
     }
@@ -49,9 +49,10 @@ class student{
 };
 
 int main(){
+    int p;
     student s1;
     // Setter Function call
-    s1.setname(" ");
+    s1.setname("riya");
     s1.setage(0);
     s1.setroll(21);
     s1.setgrade("A+");
@@ -60,6 +61,9 @@ int main(){
     s1.getname();
     s1.getage();
     s1.getroll();
-    cout<<s1.get_grade(123)<<endl;
+
+    cout<<"Enter pin: ";
+    cin>>p;
+    cout<<s1.get_grade(p)<<endl;
 
 }
