@@ -33,7 +33,7 @@ class student{
         cout<<roll_no<<endl;
     }
     string get_grade(){
-        return grade;
+        return grade;   // we can return(use String return_type) or print(use void) in function
     }
 
 };

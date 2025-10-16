@@ -18,7 +18,7 @@ class student{
     }
     void setage(int a){
         if(a<=0 || a>100){
-            cout<<"invalid age: ";
+            cout<<"invalid age: "<<endl;
         }
         age = a;
     }
